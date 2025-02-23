@@ -1,0 +1,165 @@
+#destinos {
+  padding-left: 3em;
+}
+.image-preview {
+  width: 98%;
+  max-width: 30rem;
+  height: 25rem;
+  transition: transform 0.2s;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 7px #7eb6d9;
+  flex: 1 1 calc(50% - 2rem);
+  transition: transform 0.2s;
+}
+.image-preview:hover {
+  transform: scale(1.18);
+}
+.popup-text {
+  opacity: 0;
+  position: absolute;
+  width: 20%;
+  background-color: rgb(228, 228, 228);
+  border: 5px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.image-preview:hover + .popup-text {
+  opacity: 1;
+  transform: translateY(2rem);
+}
+.negrita {
+    font-weight: bold;
+  }
+[class*="col-"] {
+  width: 100%;
+  padding: 1rem;
+  float: left;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row img:hover {
+  cursor: url("../img/cursor.cur"), auto;
+}
+/* Lo que viene a continuación es muy útil para adaptar el ancho del contenido 
+  según el dispositivo donde se visualice, para un máximo de 576px, se visualizará según el % del col que le coloques al contenido. */
+@media only screen and (max-width: 576px) {
+  /* Para móviles: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 577px) {
+  /* Para tablets: */
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  /* Para escritorio: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
